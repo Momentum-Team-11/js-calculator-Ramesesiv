@@ -1,0 +1,68 @@
+main.css *,
+* ::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #f3eded, #5f0faa);
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    outline: none;
+}
+
+.calculator-grid>button {
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgb(114, 184, 114);
+    color: black;
+}
+
+.calculator-grid>button:hover {
+    background-color: rgb(158, 211, 153);
+    color: white;
+}
+
+.output {
+    grid-column: 2/-1;
+    background-color: rgb(114, 184, 114);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding:10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color:white;
+    font-size: 12vh
+}
+
+
+/*
+EPISODE IV: NEW HOPE
+REMOVAL OF WHITE SPACE BETTWEEN THE BUTTON ELEMEMTS
+
+
+.button {
+    float: left;
+    padding-right: 10px;
+    font-family: 'Courier New';
+    -moz-transition: 1s;
+    -ms-transition: 1s linear;
+    -o-transition: 1s linear;
+    -webkit-tranistion: 1s linear;
+    transition: 1s linear;
+}*/
+
